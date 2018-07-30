@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
+.content__table-layout {
+  width:100%;
+}
+.content__table-layout td {
+  border: 1px solid #dedede;
+}
+.content__table-layout th {
+  border: 1px solid #dedede;
+}
+.wrap__table-borderset-dashed {
+  border-top: 2px dashed #000;
+}
+.wrap__text-blueground {
+  background-color: #24a;
+  color: #fff;
+}
+.wrap__text-lightblueground {
+  background-color: #ecf1f2;
+}
+.content__sell {
+  text-align: center;
+  padding:10px;
+}
+.content__sell td {
+  padding:10px;
+}
+.content__sell th {
+  padding:10px;
+}
 /* 回答はここに書いてね */
