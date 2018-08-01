@@ -46,4 +46,142 @@
   box-shadow:0 1px 6px rgba(0,0,0,.12);
   box-shadow:0 1px 4px rgba(0,0,0,.12);
 }
+
+
+/*8-2*/
+
+/*:after 未使用　他　使い所が分かりませんでした。*/
+.content__form__frame{
+  width:700px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #ecf1f2;;
+}
+.form__title {
+  position: relative;
+  margin-bottom:20px;
+}
+.form__title::before {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left :0;
+  content: "";
+  background-color: #fb6262;
+}
+.form__title__text {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  background-color: #ECF1F2;
+  font-size: 24px;
+  font-weight: bold;
+}
+.clear-fix {
+  content: "";
+  display: table;
+  vertical-align:baseline;
+  margin-bottom: 20px;
+}
+.text_color_red {
+  color:#f00;
+}
+.content__list {
+  float:left;
+  width:300px;
+}
+.content__form {
+  float:right;
+  width:380px;
+}
+.content__form__border {
+  border:none;
+  padding: 5px;
+}
+.menu__name {
+  float: left;
+  width:80px;
+  margin:0 20px 0 0;
+  line-height: 25px;
+  text-align: right;
+}
+.menu__content {
+  float: right;
+  width:180px;
+}
+.menu__content :focus{
+  border: 1px solid #000;
+}
+.menu__content__selectbox {
+  float:left;
+  border:none;
+  vertical-align: middle;
+  padding: 0;
+  content: '';
+  background-color: #fff;
+}
+.menu__content__selectbox select {
+  width: 100%;
+  color:#555;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.menu__radiobutton {
+  cursor:pointer;
+}
+.menu__radiobutton__element {
+  float:left;
+  display: none;
+  padding: 3px 3px 3px 3px;
+}
+.menu__radiobutton__element + .menu__radiobutton_appearance::before {
+  padding: 0 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: "";
+}
+.menu__radiobutton__element:checked + .menu__radiobutton_appearance::before {
+  padding: 0 8px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: "";
+}
+.menu__submit {
+  text-align: right;
+  padding: 0 20px 0 0;
+}
+.menu__submit__button {
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00bcd4;
+  border:none;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 5px;/*ラディウス　丸み*/
+  outline: none;
+}
+.menu__submit :active {
+  background-color: #f00;
+}
+.content__form__text {
+  padding: 10px;
+  width:100%;
+  height:200px;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color:#000;
+}
 /* 回答はここに書いてね */
