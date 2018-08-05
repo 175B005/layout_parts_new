@@ -11,11 +11,10 @@
   padding: 20px;
   width: 940px;
 }
-.clear-fix {
+.clear-fix::after {
   content:"";
   clear:both;
   display:block;
-  width: 940px;
 }
 .content__background-blue {
   background-color: #3274ae;
