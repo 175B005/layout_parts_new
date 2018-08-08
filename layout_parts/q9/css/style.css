@@ -16,8 +16,7 @@
   transition-duration: 0.5s;/*戻る時用！*/
 }
 .main__frame:hover .main__frame__image{
-  transform: scale(1.5);
-  transition-duration: 0.5s;/*5秒で変化*/
+  transform: scale(1.5);/*5秒で変化*/
 }
 .main__frame:hover .main__frame__content{
   bottom:0;

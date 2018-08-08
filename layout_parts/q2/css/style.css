@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.clear-fix {
-  content:"";
-  clear:both;
-  display:block;
-}
 .wrap__text-style {
   font-size:18px;
   line-height: 22px;

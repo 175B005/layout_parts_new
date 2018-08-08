@@ -46,6 +46,11 @@
   box-shadow:0 1px 4px rgba(0,0,0,.12);
 }
 /*8-2*/
+.clear-fix {
+  content: "";
+  display: table;
+  vertical-align:baseline;
+}
 .content__form__frame{
   width:700px;
   margin:0 auto;
@@ -73,15 +78,10 @@
   font-size: 24px;
   font-weight: bold;
 }
-.clear-fix {
-  content: "";
-  display: table;
-  vertical-align:baseline;
-}
 .text_color_red {
   color:#f00;
 }
-.content__list {
+.content__menu {
   float:left;
   width:300px;
 }

@@ -19,7 +19,7 @@
 }
 .content__table-layout th {
   border: 1px solid #dedede;
-  background-color: #24a !important;
+  background-color: #24a;
   color: #fff;
 }
 .content__sell {

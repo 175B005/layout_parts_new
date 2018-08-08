@@ -99,55 +99,57 @@
               <p class="form__title__text">Form Exercise</p>
             </div>
               <form class="clear-fix"><!--mainformの並列ヘッド-->
-                <div class="content__list">
-                  <li class="clear-fix"><!--name-->
-                    <p class="menu__name">
-                      名前<span class="text_color_red">*</span>
-                    </p>
-                    <div class="menu__content">
-                      <input class="content__form__border" type="text" name="name" required>
-                    </div>
-                  </li>
-                  <li class="clear-fix"><!--sex-->
-                    <p class="menu__name">性別</p>
-                    <div class="menu__content">
-                      <label class="menu__radiobutton">
-                        <input class="menu__radiobutton__element" type="radio" name="sex" value="male">
-                        <span class="menu__radiobutton_appearance">男性</span>
-                      </label>
-                      <label class="menu__radiobutton">
-                        <input class="menu__radiobutton__element" type="radio" name="sex" value="female">
-                        <span class="menu__radiobutton_appearance">女性</span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="clear-fix">
-                    <p class="menu__name">出身</p>
-                    <div class="menu__content menu__content__selectbox">
-                      <select required>
-                        <option value="1" hidden>東京</option>
-                        <option value="1">東京</option>
-                        <option value="2">神奈川</option>
-                        <option value="3">埼玉</option>
-                        <option value="4">千葉</option>
-                        <option value="5">関東外</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="clear-fix"><!--email-->
-                    <p class="menu__name">
-                      Eメール<span class="text_color_red">*</span>
-                    </p>
-                    <div class="menu__content">
-                      <input class="content__form__border" type="text" placeholder="ex) hoge@gmail.com" value="" name="email" required>
-                    </div>
-                  </li>
-                  <li class="clear-fix"><!--tel-->
-                    <p class="menu__name">電話番号</p>
-                    <div class="menu__content">
-                      <input class="content__form__border" type="text" placeholder="ex) 09012345678" value="" name="telephone">
-                    </div>
-                  </li>
+                <div class="content__menu">
+                  <ul type="disc" class="content__list">
+                    <li class="clear-fix"><!--name-->
+                      <p class="menu__name">
+                        名前<span class="text_color_red">*</span>
+                      </p>
+                      <div class="menu__content">
+                        <input class="content__form__border" type="text" name="name" required>
+                      </div>
+                    </li>
+                    <li class="clear-fix"><!--sex-->
+                      <p class="menu__name">性別</p>
+                      <div class="menu__content">
+                        <label class="menu__radiobutton">
+                          <input class="menu__radiobutton__element" type="radio" name="sex" value="male">
+                          <span class="menu__radiobutton_appearance">男性</span>
+                        </label>
+                        <label class="menu__radiobutton">
+                          <input class="menu__radiobutton__element" type="radio" name="sex" value="female">
+                          <span class="menu__radiobutton_appearance">女性</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="clear-fix">
+                      <p class="menu__name">出身</p>
+                      <div class="menu__content menu__content__selectbox">
+                        <select required>
+                          <option value="1" hidden>東京</option>
+                          <option value="1">東京</option>
+                          <option value="2">神奈川</option>
+                          <option value="3">埼玉</option>
+                          <option value="4">千葉</option>
+                          <option value="5">関東外</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="clear-fix"><!--email-->
+                      <p class="menu__name">
+                        Eメール<span class="text_color_red">*</span>
+                      </p>
+                      <div class="menu__content">
+                        <input class="content__form__border" type="text" placeholder="ex) hoge@gmail.com" value="" name="email" required>
+                      </div>
+                    </li>
+                    <li class="clear-fix"><!--tel-->
+                      <p class="menu__name">電話番号</p>
+                      <div class="menu__content">
+                        <input class="content__form__border" type="text" placeholder="ex) 09012345678" value="" name="telephone">
+                      </div>
+                    </li>
+                  </ul>
                   <div class="clear-fix">
                     <div class="menu__name"></div>
                     <label class="menu__checkbox-age">
