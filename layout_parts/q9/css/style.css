@@ -47,7 +47,7 @@
   border: 10px solid #ecfaf2;
   border-top-color: #00bcd4;
   border-radius: 50%;
-  animation: rotate-anime 3s linear infinite;
+  animation: rotate-anime 1s linear infinite;
 }
 @keyframes rotate-anime {/*「@keyframes」でフレームを設定。それを呼び出す形。*/
 0%  {transform: rotate(0);}

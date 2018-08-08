@@ -8,7 +8,8 @@
   float:left;
   padding: 20px;
   margin:0;
-  width:200px;
+  width:225px;
+  box-sizing: border-box;
 }
 .parallel-float:first-child {
   margin-right: 50px;
@@ -47,7 +48,8 @@
   justify-content: space-around;
 }
 .parallel-flex-box {
-  width:200px;
+  width:225px;
+  box-sizing: border-box;
 }
 
 .parallel-margin {
@@ -69,6 +71,6 @@
   display:inline-block;
   box-sizing: border-box;
   vertical-align: top;
-  
+
 }
 /* 回答はここに書いてね */

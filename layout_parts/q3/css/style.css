@@ -14,7 +14,6 @@
   border-top: 2px dashed #000;/*最下セル破線上部*/
 }
 .content__table-layout td {
-  padding: 10px 0;
   border: 1px solid #dedede;
   font-size: 16px;
 }
@@ -25,10 +24,10 @@
 }
 .content__sell {
   text-align: center;
-  padding:10px;
 }
 .content__sell td {
-  padding:10px;
+  padding:9px 0;
+  vertical-align: middle;
 }
 .content__sell th {
   padding:10px;

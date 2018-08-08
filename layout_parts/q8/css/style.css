@@ -236,8 +236,9 @@
   border-radius: 5px;/*ラディウス　丸み*/
   outline: none;
 }
-.menu__submit:active {
-  background-color: #f00;
+.menu__submit__button:active {
+  background-color: #fff;
+  color:#00bcd4
 }
 .content__form__text {
   padding: 10px;
