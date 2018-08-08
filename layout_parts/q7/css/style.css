@@ -22,6 +22,7 @@
   display: table-cell;
   padding-left: 50px;
   width: 225px;
+  vertical-align: middle;
   margin:0;
 }
 .parallel-table_cell:first-child {
@@ -49,17 +50,25 @@
   width:200px;
 }
 
-
+.parallel-margin {
+  width:100%;
+  font-size: 0;
+  box-sizing: border-box;
+}
 .parallel-margin_left {
   width:300px;
+  font-size: 16px;
   display:inline-block;
   vertical-align: top;
-  margin:0 50px 0 0;
 }
 .parallel-margin_right {
-  width:50%;
-  /*可変にはした。*/
+  width:100%;
+  font-size: 16px;
+  margin-left: -300px;
+  padding-left: 350px;
   display:inline-block;
+  box-sizing: border-box;
   vertical-align: top;
+  
 }
 /* 回答はここに書いてね */

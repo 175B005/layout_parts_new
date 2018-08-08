@@ -64,19 +64,15 @@
                Webサイトを作る際、コンタクトフォームを実装する機会がとても多くあります。
                ここで使われるタグは一般的にはデザインするのが難しいと言われていますが、それをやらないといけない状況は結構多いです。（簡単リセットされない、:focusや:activeを使う）
                まずは元々タグにあてられているスタイルを解除して、フラットな状態にしてからスタイルを当てていくことが大事です。
-
                特にradioとcheckboxのチェックのスタイルが難しいと思います。
                やり方として、既存のチェックは使わずに擬似要素でチェックのフィールドを再現します。:checkedを使えばチェックされているかどうかでスタイルを変えることができるので、これをうまく使いましょう。cssでは+（隣接セレクタ）というものも使わなくてはなりませんので、調べてみましょう。
                また、一番下のボタンはbuttonタグを使って実装しましょう。（<input type="submit">を使って実装することも可能です）
-
                この課題では、実際にユーザーが入力した値を送れる状態まで作っていただきます。answerの方で確認していただきたいのですが、全ての入力フォームを適当に記述してsubmitボタンを押してみてください。URL欄の最後に「?name=...」という感じの文字列が追加されているのがわかると思います。（その?以降のものをパラメーターと呼びます。複数ある場合は?◯◯=□□&△△=××のように&繋ぎになります。◯◯や△△の部分はinputタグやselectタグのname属性が入ります。）
                これが、入力した値を送信できている状態です。本来ではこの値をサーバーサイドで受け取ってフォームの処理をするのですが、今回はHTMLを使って送信するまでをやってもらいます。
                answerで入力した値を自分で作ったフォームに全く同じように入力した場合、URLが全く同じように変わる状態にしてください。（formのaction属性やmethod属性が関係してきます）
                また赤の*(アスタリスク)の部分は必須項目です。必須項目を空にしたまま送信しようとするとアラートが表示される処理も再現しましょう。
-
                また、この問題はレイアウトが複雑なため、サイズや色の確認のためにデベロッパーツールを見ても構いません。
                ただ全ての答えを見るといったことはしないようにしましょう。
-
                ■この問題で使う大事なhtml要素
                ・label
                ・form
@@ -100,67 +96,72 @@
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8 content__form__frame">
             <div class="form__title">
-              <p class="form__title__text">Form Expercise</p>
+              <p class="form__title__text">Form Exercise</p>
             </div>
               <form class="clear-fix"><!--mainformの並列ヘッド-->
                 <div class="content__list">
                   <li class="clear-fix"><!--name-->
                     <p class="menu__name">
-                      name
-                      <span class="text_color_red">*</span>
+                      名前<span class="text_color_red">*</span>
                     </p>
                     <div class="menu__content">
                       <input class="content__form__border" type="text" name="name" required>
                     </div>
                   </li>
                   <li class="clear-fix"><!--sex-->
-                    <p class="menu__name">Sex</p>
+                    <p class="menu__name">性別</p>
                     <div class="menu__content">
                       <label class="menu__radiobutton">
                         <input class="menu__radiobutton__element" type="radio" name="sex" value="male">
-                        <span class="menu__radiobutton_appearance">male</span>
+                        <span class="menu__radiobutton_appearance">男性</span>
                       </label>
                       <label class="menu__radiobutton">
                         <input class="menu__radiobutton__element" type="radio" name="sex" value="female">
-                        <span class="menu__radiobutton_appearance">female</span>
+                        <span class="menu__radiobutton_appearance">女性</span>
                       </label>
                     </div>
                   </li>
                   <li class="clear-fix">
-                    <p class="menu__name">年齢<span class="text_color_red">*</span></p>
+                    <p class="menu__name">出身</p>
                     <div class="menu__content menu__content__selectbox">
                       <select required>
-                        <option value="" hidden>age はformの内容に含まない</option>
-                        <option value="1">10代</option>
-                        <option value="2">20代</option>
-                        <option value="3">30代</option>
-                        <option value="4">40代</option>
-                        <option value="5">50代</option>
-                        <option value="6">60代</option>
+                        <option value="1" hidden>東京</option>
+                        <option value="1">東京</option>
+                        <option value="2">神奈川</option>
+                        <option value="3">埼玉</option>
+                        <option value="4">千葉</option>
+                        <option value="5">関東外</option>
                       </select>
                     </div>
                   </li>
                   <li class="clear-fix"><!--email-->
                     <p class="menu__name">
-                      Email
-                      <span class="text_color_red">*</span>
+                      Eメール<span class="text_color_red">*</span>
                     </p>
                     <div class="menu__content">
-                      <input class="content__form__border" type="text" placeholder="ex)hoge@hogehoge.com" value="" name="email" required>
+                      <input class="content__form__border" type="text" placeholder="ex) hoge@gmail.com" value="" name="email" required>
                     </div>
                   </li>
                   <li class="clear-fix"><!--tel-->
-                    <p class="menu__name">Telephone</p>
+                    <p class="menu__name">電話番号</p>
                     <div class="menu__content">
-                      <input class="content__form__border" type="text" placeholder="ex)0120444444" value="" name="telephone">
+                      <input class="content__form__border" type="text" placeholder="ex) 09012345678" value="" name="telephone">
                     </div>
                   </li>
+                  <div class="clear-fix">
+                    <div class="menu__name"></div>
+                    <label class="menu__checkbox-age">
+                      <input type="checkbox" class="menu__checkbox-element" name="adult" value="adult">
+                      <span class="menu__checkbox-style">20歳以上です
+                      </sapn>
+                    </label>
+                  </div>
                   <div class="menu__submit">
-                    <input class="menu__submit__button" type="submit" name="submit" value="submit">
+                    <input class="menu__submit__button" type="submit" name="submit" value="送信">
                   </div>
                 </div>
                 <div class="content__form">
-                  <textarea class="content__form__text content__form__border" name ="inputtext" placeholder="Please fill in the message ..." value=""></textarea>
+                  <textarea class="content__form__text content__form__border" name ="inputtext" placeholder="何かあれば入力してください。" value=""></textarea>
                 </div>
               </form>
           </div>

@@ -3,22 +3,25 @@
 /* 回答はここに書いてね */
 .content__table-layout {
   width:100%;
+  table-layout:fixed;
+  font-size: 18px;
+  line-height: 26px;
+}
+.content__table-layout tr:nth-child(2n-1){
+  background-color: #ecf1f2;/*1行おきに背景色変更*/
+}
+.content__table-layout tr:last-child {
+  border-top: 2px dashed #000;/*最下セル破線上部*/
 }
 .content__table-layout td {
+  padding: 10px 0;
   border: 1px solid #dedede;
+  font-size: 16px;
 }
 .content__table-layout th {
   border: 1px solid #dedede;
-}
-.wrap__table-borderset-dashed {
-  border-top: 2px dashed #000;
-}
-.wrap__text-blueground {
-  background-color: #24a;
+  background-color: #24a !important;
   color: #fff;
-}
-.wrap__text-lightblueground {
-  background-color: #ecf1f2;
 }
 .content__sell {
   text-align: center;

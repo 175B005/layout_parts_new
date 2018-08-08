@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clear-fix::after {
+  content:"";
+  clear:both;
+  display:block;
+}
 .wrap__text-style {
   font-size: 16px;
   line-height: 16px;
@@ -10,22 +15,21 @@
   margin:0 auto;
   padding: 20px;
   width: 940px;
-}
-.clear-fix::after {
-  content:"";
-  clear:both;
-  display:block;
+  box-sizing: border-box;/*border padding を含むサイズを算出*/
 }
 .content__background-blue {
   background-color: #3274ae;
   float:left;
   margin-left: 20px;
-  width:270px;
+  padding: 20px;
+  width:230px;
+}
+.content__background-blue:first-child {
+  margin-left: 0;
 }
 .content__frame-whiteblue {
   background-color: #eaf4ff;
   border: 10px solid #022336;
-  margin:20px;
   padding: 20px;
 }
 /* 回答はここに書いてね */

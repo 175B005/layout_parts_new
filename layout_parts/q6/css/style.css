@@ -6,7 +6,7 @@
 }
 .text-layout_textalign p {
   width: 90px;
-  padding: 10px;
+  padding: 10px 0;
   display: inline-block;
   background-color: #e6f2ff;
 }
@@ -14,9 +14,8 @@
 
 .text-layout_margin {
   width:90px;
-  height:30px;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 0;
   margin:auto;
   background-color: #e6f2ff;
 }
